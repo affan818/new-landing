@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+/* index.css or App.css */
+
+/* your other CSS here */
+body {
+  font-family: "Montserrat", sans-serif;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.3s ease-out forwards;
+}
+
+.swiper-pagination {
+  margin-top: 1.5rem; /* space below logos */
+}
+
+.swiper-pagination-bullet {
+  background: #ffffff;
+  opacity: 0.4;
+  transition: opacity 0.3s ease;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+}
+
+.swiper-pagination-bullet-active {
+  background: #00ffbf;
+  opacity: 1;
+}
