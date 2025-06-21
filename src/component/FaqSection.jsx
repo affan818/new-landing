@@ -2,34 +2,36 @@ import React, { useRef, useState, useEffect } from "react";
 
 const faqItems = [
   {
-    question: "How is your agency different from other marketing agencies?",
+    question:
+      "What makes Mediaforum stand out from other digital marketing companies?",
     answer:
-      "At our marketing agency, we set ourselves apart by only working with clients in the healthcare sector. We believe that this focus allows us to provide our clients with the best results possible. Additionally, we don’t believe in simply running social media and Google ads to generate leads. Instead, we focus on building a marketing system that will generate sales. By only working with a limited number of clients, we are able to maintain a focus on quality over quantity.",
+      "We don’t just create ads or websites — we build digital systems and holistic platforms to help drive your business forward. All of our work is strategy-first and ROI-driven.",
   },
   {
-    question: "Can you guys also help in Case Acceptance?",
+    question: "Can I  subscribe to services on an à la carte basis?",
     answer:
-      "Yes, we help with case acceptance by training your staff and improving communication workflows to increase acceptance rates.",
+      "Absolutely. Whether you need SEO, branding, or a full 360° strategy, we have you covered.",
   },
   {
-    question: "Do you offer services that can be chosen individually?",
+    question: "Do you offer reporting and analytics?",
     answer:
-      "Yes, you can choose services individually depending on your business needs.",
+      "Yes. Our guiding principle is transparency. You'll get performance reports with real-time tracking and actionable insights.",
   },
   {
-    question: "How much of an ROI can I expect?",
+    question: "How much ROI can I expect?",
     answer:
-      "ROI varies based on service and location, but we aim for a significant return through strategic marketing.",
+      "That depends on what you’re trying to accomplish, which industry you’re in, and how much you’re willing to invest, but our clients generally start seeing results within 60-90 days.",
   },
   {
-    question: "Will you call the leads as well?",
+    question: "Do you also do content creation?",
     answer:
-      "Yes, we have lead nurturing systems in place, including follow-up calling if needed.",
+      "Yes. Videos, graphics, blog writing, reels – everything you need from our in-house team!",
   },
   {
-    question: "Do you guys Sell Courses or Mentorship?",
+    question:
+      "Do you only work with big brands, or do you also work with local businesses?",
     answer:
-      "Yes, we offer optional mentorship programs and courses tailored to your business model.",
+      "Both. Whether we’re a homegrown chase or you’re scaling to new heights, our team customizes solutions for your stage and size.",
   },
 ];
 
@@ -42,7 +44,9 @@ const FaqSection = () => {
 
   return (
     <div className="bg-black py-16 px-4">
-      <h2 className="text-center text-6xl font-extrabold pb-10">Frequently asked questions?</h2>
+      <h2 className="text-center text-6xl font-extrabold pb-10">
+        Frequently Asked Questions
+      </h2>
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
         {faqItems.map((item, index) => {
           const isOpen = openIndex === index;

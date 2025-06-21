@@ -1,9 +1,11 @@
 import React from "react";
 import { BsCheckCircle } from "react-icons/bs";
-function ExtraCard({ items }) {
+function ExtraCard({ items, gridClass: lgClass = "lg:grid-cols-4 " }) {
   return (
     <div className="bg-black py-10 px-5">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-center">
+      <div
+        className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 ${lgClass} gap-6 justify-center`}
+      >
         {items.map((title, index) => (
           <div
             key={index}

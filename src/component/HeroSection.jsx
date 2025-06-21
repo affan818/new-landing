@@ -7,19 +7,20 @@ function HeroSection() {
       {/* Main Text */}
       <div className="max-w-5xl">
         <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white mb-6 sm:mb-8 p-2 sm:p-4 leading-snug">
-          Get <span className="text-yellow-400">new patients</span>, improve{" "}
-          <span className="text-yellow-400">case acceptance</span>, and patient
-          retention & <span className="text-yellow-400">Grow Referrals</span> in
-          90-Days
+          Get More<span className="text-yellow-400">Leads,</span>Increase{" "}
+          <span className="text-yellow-400">Sales,</span>
+          and Stand Out <span className="text-yellow-400">
+            From the Crowd
+          </span>{" "}
+          Get
         </p>
         <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-white mb-6 sm:mb-8 leading-relaxed">
-          Value-Driven Marketing For Clinics & Hospitals
+          360° tailor-fitted Digital Marketing & Branding solution for your
+          business
         </p>
       </div>
-
       {/* Button */}
-
-      <Button />
+      <Button btnTxt={"Schedule your call now"} />
     </section>
   );
 }

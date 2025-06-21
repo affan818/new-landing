@@ -1,6 +1,6 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
-function Button() {
+function Button({ btnTxt: text = "Schedule your call now" }) {
   const [showForm, setShowForm] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
@@ -42,7 +42,7 @@ function Button() {
         onClick={() => setShowForm(true)}
         className="px-4 sm:px-10 py-3 sm:py-4 text-lg sm:text-2xl bg-gradient-to-r from-yellow-700 to-yellow-400 text-white font-bold rounded-lg shadow-md hover:from-yellow-600 hover:to-yellow-300 hover:shadow-xl transition-all duration-300 animate-bounce"
       >
-        Book a Free Strategy Call Now
+        {text}
       </button>
 
       {/* Popup Form */}
