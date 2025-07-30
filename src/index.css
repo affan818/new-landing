@@ -38,3 +38,21 @@ body {
   background: #00ffbf;
   opacity: 1;
 }
+
+/* Move pagination dots to bottom */
+.custom-swiper .swiper-pagination {
+  bottom: 0px !important;
+  text-align: center;
+}
+
+/* Custom dots */
+.custom-swiper .swiper-pagination-bullet {
+  background-color: #fef190 !important;
+  opacity: 1;
+  margin: 0 6px !important;
+}
+
+.custom-swiper .swiper-pagination-bullet-active {
+  background-color: #ba7704 !important;
+  opacity: 1;
+}
